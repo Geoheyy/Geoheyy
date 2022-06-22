@@ -1,0 +1,233 @@
+Std Source Repository
+//-----当前仓库版本号
+Std.source.latestVersion = "0.2";
+//-----当前仓库名称
+Std.source.repositoryName = "StdJS";
+//-----当前仓库git地址
+Std.source.gitAddress = "https://github.com/Geoheyy/Geoheyy.github.io";
+//-----当前仓库最新版本代码源地址,以下地址是根据当前路径和上面的版本号判断的
+Std.source.latestVersionAddress = (location + "").between(0,(location + "").lastIndexOf("/") + 1) + Std.source.latestVersion;
+//-----
+Std.source("StdJS",Std.source.latestVersionAddress);
+body{
+font-family: Lato,"Open Sans",Arial,"Hiragino Sans GB","Microsoft YaHei",STHeiti,"WenQuanYi Micro Hei",SimSun,sans-serif;
+font-size: 13px;
+margin: 0;
+color: #474442;
+background: #4C89AE;
+}
+h1{
+display: inline-block;*display: inline;*zoom: 1;
+font-size: 36px;
+margin: 0;
+padding: 20px 0 20px 60px;
+text-shadow: 2px 4px 0 #396884;
+text-align: center;
+color: white;
+background-image: url("favicon.png");
+background-repeat: no-repeat;
+background-position: 0 24px;
+}
+h2{
+font-size: 21px;
+margin: 0;
+padding: 10px 0 30px 0;
+text-align: center;
+text-shadow: 1px 2px 0 #30576F;
+}
+h3{
+font-size: 32px;
+margin: 10px 0 20px;
+padding: 10px 0 10px 0;
+text-align: center;
+letter-spacing: 2px;
+color: #28A0DA;
+}
+/*
+* header
+*/
+.header{
+font-size: 16px;
+height: 56px;
+text-align: center;
+text-shadow: 1px 2px 0 #3B6C89;
+border-bottom: 1px solid #3D6E8C;
+background-color: #4A87AB;
+}
+.header > ._location{
+display: inline-block;*display: inline;*zoom: 1;
+text-decoration: none;
+margin: 0 20px 0 20px;
+height: 53px;
+line-height: 50px;
+border-top: 3px solid transparent;
+color: #E8E8E8;
+outline: none;
+cursor: pointer;
+transition: color 0.2s,border-color 0.2s;
+}
+.header > ._location:hover{
+color: white;
+}
+.header > ._location.selected{
+color: #96DBFF;
+border-color: #96DBFF;
+}
+.header.__gray__{
+background-color: #D9D5D3;
+border-bottom-color: #B5B0AD;
+text-shadow: 0 1px 0 #E1DAD6;
+}
+.header.__gray__ > ._location{
+color: #474442;
+}
+.header.__gray__ > ._location.selected{
+color: #238EC1;
+border-color: #28A0DA;
+}
+/*
+* main
+*/
+.main{
+background: #4C89AE;
+padding: 15px 0 50px 0;
+text-align: center;
+}
+.main > ._description{
+font-size: 16px;
+width: 900px;
+margin: 0 auto;
+color: white;
+}
+.main > ._description > p{
+line-height: 2em;
+margin-bottom: 30px;
+}
+/*
+* addresses
+*/
+.addresses{
+background: #427797;
+color: white;
+padding: 25px 0 50px 0;
+}
+.addresses input{
+font-family: Lato,"Open Sans",Arial,"Hiragino Sans GB","Microsoft YaHei",STHeiti,"WenQuanYi Micro Hei",SimSun,sans-serif;
+font-size: 13px;
+height: 40px;
+width: 590px;
+margin: 8px 0 8px 0;
+padding: 0 5px 0 5px;
+border: 2px solid #5FABD9;
+color: white;
+background: #427797;
+transition: background 0.2s,border-color 0.2s;
+}
+.addresses input:focus{
+border-color: #86D5FF;
+background: #4781A4;
+}
+.addresses > ._row{
+width: 600px;
+margin: 8px auto 25px auto;
+}
+.addresses > ._row > ._title a{
+font-style: italic;
+font-size: 14px;
+margin-bottom: 4px;
+text-decoration: none;
+color: white;
+text-shadow: 0 1px 0 #134F6C;
+}
+.addresses > ._row > ._title a:hover{
+text-decoration: underline;
+}
+/*
+* example
+*/
+.example{
+background: #EEF6FC;
+position: relative;
+padding: 20px 10px 20px 10px;
+}
+.example pre{
+font-family: "Source Code Pro";
+font-size: 14px;
+margin: 0 auto;
+padding:20px;
+width: 860px;
+}
+/*
+* footer
+*/
+.footer{
+padding: 20px 0 20px 0;
+background: #4C89AE;
+}
+.footer > ._links{
+width: 900px;
+margin: 0 auto;
+}
+.footer > ._links > a{
+display: inline-block;*display: inline;*zoom: 1;
+font-size: 14px;
+padding: 20px 0 20px 0;
+width: 24%;
+color: #C2E9FF;
+text-decoration: none;
+text-align: center;
+transition: all 0.2s;
+}
+.footer > ._links > a:hover{
+color: white;
+text-decoration: underline;
+}
+/*
+* resources
+*/
+.resources{
+width: 80%;
+margin: 10px auto 50px auto;
+border-collapse:collapse;
+background: white;
+border: 1px solid #3D6E8C;
+}
+.resources td{
+padding: 3px 5px 3px 5px;
+}
+.resources thead > tr{
+font-size: 14px;
+height: 35px;
+text-align: center;
+font-style: italic;
+margin-bottom: 4px;
+text-decoration: none;
+background: #4A87AB;
+color: white;
+}
+.resources thead > tr > td{
+border: 1px solid #3D6E8C;
+}
+.resources tbody > tr{
+border-right: 1px solid #C1C1C1;
+}
+.resources tbody > tr > td{
+font-size: 13px;
+height: 30px;
+border-right: 1px solid #C1C1C1;
+border-bottom: 1px solid #C1C1C1;
+}
+/*
+* packages
+*/
+.packages{
+margin: 0 auto;
+background: #D9D5D3;
+border-top: 1px solid #E1DAD6;
+}
+/********* screen ***********/
+@media only screen and (max-width: 1024px){
+.resources{
+width: 98%
+}
+}
